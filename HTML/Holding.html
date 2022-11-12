@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>classes</title>
+        <meta name="viewport" content="width-device-width initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/mystyle.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=BioRhyme&family=Black+Ops+One&family=Bungee&family=Bungee+Shade&family=Creepster&family=Ewert&family=Fruktur&family=Gravitas+One&family=Monoton&family=Rubik:wght@900&display=swap');
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min/js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootdtrap/4.5.0/js/bootstrap.min.js"></script>
+            <!-- Font Awsome for extras -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awsome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+          
+        
+        
+    <title>Accordion test</title>
+       <script type="test/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+       <script type="text/javascript">
+         $(document).ready( function() {
+         
+         // initialize accordion
+         $('#Accordion ul').each( function() {
+            var currentURI =window.location.href;
+            var links = $('a' this);
+            var collapse = true;
+            for (var i = 0; i < links.size(); i++) {
+                var elem = links.eq(i);
+                var href = elem.attr('href');
+                var hreflength = href.length;
+                var compareto = currentURI.substr(-1*hreflength);
+            
+                if (href == compareto) {
+                collapse = false;
+                break;
+            }
+        };
+        if (collapse) {
+            $(this).hide();
+        }
+         });
+           $('#Accordion').delegate('span', 'click', function() {
+               var ul =$(this).next('ul');
+               if (ul.is(':visible')) {
+                   ul.slideUp(500);
+               } else {
+                   $('#Accordion ul').not(ul).slideUp(500);
+                   ul.slideDown(500);
+               }
+           });
+         
+         }); 
+        </script>       
+</head>
+<body>
+               
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <a class="navbar-brand" href="#">Seedling Theater Company</a>
+            <button class="navbar-toggler" type="button" data-toggle="#collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>                
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsiblenavbar">
+             <ul class="navbar-nav">
+                <li class="nav-item">
+             <a class="nav-link" href="#">Classes</a> 
+                </li>
+                <li class="nav-item">
+             <a class="nav-link" href="#">Calendar</a> 
+                </li>
+                <li class="nav-item">
+             <a class="nav-link" href="#">Store</a> 
+               </li>
+             </ul>
+            </div>
+        </nav>
+               
+                <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
+                    <div class="dropdown"><h1 class="month font-weight-bold mb-0 text-upercase"><span>July 2022 Button </span></h1><div class="dropdown">January <br> Febuary <br> March <br> April <br> May <br> June <br> July <br> August <br> September <br> October <br> November <br> December <br></div></div> 
+                </div>
+                
+                            <!-- Calendar -->
+   
+          <div class="calendar shadow bg-white p-5">
+                <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
+                    <div class="dropdown"><h1 class="month font-weight-bold mb-0 text-upercase"><span>July 2022 Button </span></h1><div class="dropdown-content">January <br> Febuary <br> March <br> April <br> May <br> June <br> July <br> August <br> September <br> October <br> November <br> December <br></div></div> 
+            </div>
+                
+          </div>     
+              
+              <ol class="days list-unstyled">
+                    <li>
+                      <div class="date">1</div>
+                      <div class="event bg-success">Recital: 8-12 yrs</div>                         
+                    </li>                
+                    <li>
+                        <div class="date">2</div> 
+                    </li>
+                    <li>
+                        <div class="date">3</div> 
+                    </li>
+                    <li>
+                        <div class="date">4</div> 
+                    </li>
+                    <li>
+                        <div class="date">5</div> 
+                    </li>
+                    <li>
+                        <div class="date">6</div> 
+                    </li>
+                    <li>
+                        <div class="date">7</div> 
+                    </li>
+                    <li>
+                        <div class="date">8</div> 
+                    </li>
+                    <li>
+                        <div class="date">9</div> 
+                    </li>
+                    <li>
+                        <div class="date">10</div> 
+                    </li>
+                    <li>
+                      <div class="date">11</div>                         
+                    </li>                
+                    <li>
+                        <div class="date">12</div> 
+                    </li>
+                    <li>
+                        <div class="date">13</div> 
+                    </li>
+                    <li>
+                        <div class="date">14</div> 
+                    </li>
+                    <li>
+                        <div class="date">15</div> 
+                    </li>
+                    <li>
+                        <div class="date">16</div> 
+                    </li>
+                    <li>
+                        <div class="date">17</div> 
+                    </li>
+                    <li>
+                        <div class="date">18</div> 
+                    </li>
+                    <li>
+                        <div class="date">19</div> 
+                    </li>
+                    <li>
+                        <div class="date">20</div> 
+                    </li>
+                    <li>
+                      <div class="date">21</div>                        
+                    </li>                
+                    <li>
+                        <div class="date">22</div> 
+                    </li>
+                    <li>
+                        <div class="date">23</div> 
+                    </li>
+                    <li>
+                        <div class="date">24</div> 
+                    </li>
+                    <li>
+                        <div class="date">25</div> 
+                    </li>
+                    <li>
+                        <div class="date">26</div> 
+                    </li>
+                    <li>
+                        <div class="date">27</div> 
+                    </li>
+                    <li>
+                        <div class="date">28</div> 
+                    </li>
+                    <li>
+                        <div class="date">29</div> 
+                    </li>
+                    <li>
+                        <div class="date">30</div> 
+                    </li>
+                    <li></li>
+                </ol>
+                
+               
+                           <!-- initialize accordion -->
+    <ul id="#Accordion" class="accordion">
+        <li>
+            <span><div class="link"><i class="fa fa-bullhorn"></i>Seedling Theater<i class="fa fa-chevron-down"></i></div></span>
+            <ul class="submenu">
+               <li><a href="#">Frozen Cast</a></li>
+               <li><a href="#">Frozen Classes</a></li>
+               <li><a href="#">Resources</a></li>          
+            </ul>      
+        </li>
+        <li>
+            <span><div class="link"><i class="fa fa-asterisk"></i>Intro Classes<i class="fa fa-chevron-down"></i></div></span>
+            <ul class="submenu">
+               <li><a href="#">Musical</a></li>
+               <li><a href="#">Theater</a></li>
+               <li><a href="#">Sprouts</a></li>          
+            </ul>      
+        </li>
+        <li>
+            <span><div class="link"><i class="fa fa-bars"></i>My Classes<i class="fa fa-chevron-down"></i></div></span>
+            <ul class="submenu">
+               <li><a href="#">Designt</a></li>          
+            </ul>      
+        </li>
+        <li>
+            <span>INFO</span>
+            <ul class="submenu">
+               <li><a href="#">Dance I</a></li>
+               <li><a href="#">Dance II</a></li>       
+            </ul>      
+        </li>      
+    </ul>
+    
+   
+
+                
+               <!-- with css rules 
+    .dropdown-content {
+    display: none;
+    position: relative;
+    text-align: right;
+    background-color: #f9f9f9;
+    min-width: 160px;;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+        END       -->
+               
+
+
+            
+            
+             
+            
+           
+          
+         
+        
+       
+</body>     
+    
+</html>     
+   
